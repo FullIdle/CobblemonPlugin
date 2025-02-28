@@ -1,0 +1,10 @@
+name: ${project.name}
+main: ${project.group}
+version: ${project.version}
+api-version: 1.21
+commands:
+  endbattle:
+    description: desc
+    aliases: [eb]
+    permission: cblmendbattle.endbattle
+    permission-message: '&8[&3Cblm&rEndBattle&8]&c你没有权限使用这个命令!!!'

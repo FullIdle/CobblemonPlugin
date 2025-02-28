@@ -1,0 +1,7 @@
+worlds:
+  - world
+  - DIM1
+  - DIM-1
+msg:
+  enable: true
+  text: '&8[&3Cblm&rWorld&7NoSent&8]&c该世界不可以放出精灵!!!'

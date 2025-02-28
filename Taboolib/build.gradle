@@ -1,0 +1,33 @@
+import static io.izzel.taboolib.gradle.ModuleNameKt.*
+
+plugins {
+    id("io.izzel.taboolib") version "2.0.22"
+}
+
+group = 'com.figsq.cobblemonplugin.taboolib.test.Main'
+version = "1.0-SNAPSHOT"
+
+allprojects {
+    apply plugin: "io.izzel.taboolib"
+
+    taboolib {
+        env {
+            repoCentral = 'https://maven.aliyun.com/repository/central'
+            repoTabooLib = 'http://ptms.ink:8081/repository/releases'
+            install(
+                    basic,
+                    bukkit,
+                    bukkitNMS,
+                    bukkitNMSUtil,
+                    bukkitUtil,
+                    database,
+                    bukkitHook,
+            )
+            enableIsolatedClassloader = true
+        }
+        version {
+            taboolib = "6.2.3"
+            coroutines = null
+        }
+    }
+}
