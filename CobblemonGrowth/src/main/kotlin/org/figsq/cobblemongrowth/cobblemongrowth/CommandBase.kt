@@ -16,6 +16,10 @@ object CommandBase: TabExecutor{
     )
 
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
+        if (!sender.isOp) {
+            sender.sendMessage("This command is not available without op!!!")
+            return false
+        }
         args.getOrNull(0)?.let {sub ->
             val lowercase = sub.lowercase()
             when (lowercase) {
