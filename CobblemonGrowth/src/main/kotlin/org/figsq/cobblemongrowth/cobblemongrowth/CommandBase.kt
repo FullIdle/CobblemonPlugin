@@ -16,7 +16,7 @@ object CommandBase: TabExecutor{
         "§7/cobblemongrowth help§f:§7Show this help",
         "§7/cobblemongrowth reload§f:§7Reload the config",
         "§7/cobblemongrowth getgrowth {slot}§f:§7Get the growth type of the Pokémon in the backpack",
-        "§7/cobblemongrowth setgrowth {slot}§f:§7Set the growth type of the Pokémon in the backpack"
+        "§7/cobblemongrowth setgrowth {slot} {growth}§f:§7Set the growth type of the Pokémon in the backpack"
     )
 
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
