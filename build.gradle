@@ -26,12 +26,15 @@ allprojects {
             name = 'spigotmc-repo'
             url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
         }
+        maven {
+            url = 'https://maven.impactdev.net/repository/development/'
+        }
     }
 
     dependencies {
         minecraft "com.mojang:minecraft:1.21.1"
         mappings loom.officialMojangMappings()
-        modCompileOnly 'com.cobblemon:Cobblemon:1.6.1+1.21.1'
+        modCompileOnly("com.cobblemon:mod:1.6.1+1.21.1")
 
         compileOnly 'org.spigotmc:spigot-api:1.21.1-R0.1-SNAPSHOT'
 
@@ -40,7 +43,7 @@ allprojects {
         }
 
         compileOnly 'me.clip:placeholderapi:2.11.6'
-        compileOnly 'me.fullidle.ficore:FICore:1.2.6'
+        compileOnly 'me.fullidle.ficore.ficore:FICore:1.2.9'
 
         implementation 'org.jetbrains.kotlin:kotlin-test'
         testImplementation 'org.jetbrains.kotlin:kotlin-test'

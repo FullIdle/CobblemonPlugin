@@ -15,4 +15,5 @@ include 'CblmWorldNoSent'
 include 'CblmEndBattle'
 include 'Taboolib'
 include 'CobblemonBukkitEvent'
+include 'CobPokeEdit'
 
