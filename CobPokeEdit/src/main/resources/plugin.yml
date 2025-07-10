@@ -1,9 +1,0 @@
-name: ${project.name}
-main: ${project.group}
-version: ${project.version}
-api-version: 1.21
-depend:
-  - PlaceholderAPI
-commands:
-  '${project.name.toLowerCase()}':
-    description: desc
